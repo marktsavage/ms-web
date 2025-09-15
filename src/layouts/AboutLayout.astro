@@ -9,19 +9,43 @@ export interface Props {
   frontmatter: {
     title: string;
     description?: string;
+    image?: string;
   };
 }
+
+// class:list={[
+//         "app-prose mb-28 max-w-app prose-img:border-0",
+//         frontmatter.image && "flex flex-col md:flex-row  gap-8",
+//       ]}
 
 const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
   <Header />
-  <Breadcrumb />
+  <!-- <Breadcrumb /> -->
   <main id="main-content">
-    <section id="about" class="app-prose mb-28 max-w-app prose-img:border-0">
-      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
-      <slot />
+    <section
+      id="about"
+      class="app-prose mb-28 max-w-app prose-img:border-0"
+    >
+      <h1 class="text-2xl mb-8 tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+      <!-- <div class={frontmatter.image && "flex flex-col md:flex-row gap-8 "}> -->
+      <div class={"flex flex-col md:flex-row gap-8 "}>
+        <div
+          class:list={[
+            "flex-1 intro-p",
+            !frontmatter.image && "max-w-[66%]",
+          ]}
+        >
+          <slot />
+        </div>
+        {frontmatter.image && (
+          <div class="flex-1 flex items-start ">
+          <img class="rounded-md" src={frontmatter.image} alt={frontmatter.title} />
+        </div>
+        )}
+      </div>
     </section>
   </main>
   <Footer />

@@ -1,37 +1,15 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About"
+image: "public/mark-savage.jpg"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hello and welcome. I’m a clinical psychotherapist, and I provide a mindfulness-based approach to psychotherapy and counselling.
 
-![Astro Paper](public/astropaper-og.jpg)
+My practice is based in South Devon, just outside of Totnes. I also provide online psychotherapy and counselling to individuals all over the UK and the world. I’ve found online therapy to be an effective way for people to access help and support; and for me it’s a joy to be able to work with people regardless of where they’re living.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+I’ve been in clinical practice since 2014. My primary professional training was at the Karuna Institute in Devon. Karuna is one of the oldest centres worldwide to provide psychotherapy training based on Buddhist mindfulness practice.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+I have a Diploma in relational mindfulness, and an MA in mindfulness-based Core Process Psychotherapy from Middlesex University London.
 
-## Features
-
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
-
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Alongside my work, I am a father and husband, and draw deeply on the interconnectedness of life and the earth.

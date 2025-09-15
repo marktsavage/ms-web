@@ -38,6 +38,7 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
+    /* @apply flex min-h-svh flex-col bg-background font-sans text-foreground selection:bg-accent/75 selection:text-background; */
     @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
   }
   a,
@@ -52,14 +53,20 @@ html[data-theme="dark"] {
   footer {
     @apply mx-auto max-w-app px-4;
   }
+
+  .intro-p p:first-of-type {
+    @apply text-xl font-semibold;
+  }
 }
 
 @utility max-w-app {
-  @apply max-w-3xl;
+  /* @apply max-w-3xl; */
+  @apply max-w-5xl xl:max-w-5xl;
 }
 
 .active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-4;
+  @apply underline decoration-wavy decoration-2 underline-offset-8;
+  /* @apply border-b-2 pb-2; */
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
