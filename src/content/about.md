@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/AboutLayout.astro
 title: "About"
 image: "public/mark-savage.jpg"
 ---

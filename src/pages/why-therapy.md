@@ -1,6 +1,7 @@
 ---
-layout: ../layouts/AboutLayout.astro
+layout: ../layouts/BasicPage.astro
 title: "Why Therapy"
+pageTitle: "Why Therapy"
 ---
 
 To engage with ourselves through therapy can be a difficult step to take; yet it can also be profoundly rewarding and life affirming.

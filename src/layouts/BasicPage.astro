@@ -1,13 +1,14 @@
 ---
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Breadcrumb from "@/components/Breadcrumb.astro";
+// import Breadcrumb from "@/components/Breadcrumb.astro";
 import Layout from "./Layout.astro";
 import { SITE } from "@/config";
 
 export interface Props {
   frontmatter: {
     title: string;
+    pageTitle?: string;
     description?: string;
     image?: string;
   };
@@ -21,16 +22,14 @@ export interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+<Layout title={`${frontmatter.title}`} pageTitle={`${frontmatter.pageTitle ?? ''}`}>
   <Header />
-  <!-- <Breadcrumb /> -->
   <main id="main-content">
     <section
-      id="about"
+      id="content"
       class="app-prose mb-28 max-w-app prose-img:border-0"
     >
-      <h1 class="text-2xl mb-8 tracking-wider sm:text-3xl">{frontmatter.title}</h1>
-      <!-- <div class={frontmatter.image && "flex flex-col md:flex-row gap-8 "}> -->
+      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
       <div class={"flex flex-col md:flex-row gap-8 "}>
         <div
           class:list={[

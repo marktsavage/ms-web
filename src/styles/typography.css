@@ -10,7 +10,7 @@
     h3,
     h4,
     th {
-      @apply mb-3 text-foreground;
+      @apply mb-3 text-foreground font-medium;
     }
 
     h3 {
@@ -110,7 +110,7 @@
       @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
     }
     .line.highlighted {
-      @apply inline-block w-full bg-slate-400/20;
+      @apply inline-block w-full bg-base-400/20;
     }
     .highlighted-word {
       @apply rounded-sm border border-border px-0.5 py-px;

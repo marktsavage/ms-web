@@ -1,6 +1,7 @@
 ---
-layout: ../layouts/AboutLayout.astro
+layout: ../layouts/BasicPage.astro
 title: "Contact"
+pageTitle: "Contact"
 ---
 
 You can contact me on [07413 710 927](tel:07413710927), or at [mark@marktsavage.co.uk](mailto:mark@marktsavage.co.uk)

@@ -1,6 +1,7 @@
 ---
-layout: ../layouts/AboutLayout.astro
+layout: ../layouts/BasicPage.astro
 title: "Mindfulness Approach"
+pageTitle: "Approach"
 ---
 
 Whatever our life experiences, mindfulness can help us create more room in our lives, greater clarity and well-being – even in the midst of difficulty or crisis.
