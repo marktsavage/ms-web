@@ -1,0 +1,17 @@
+---
+import AboutContent, { frontmatter as aboutFrontmatter } from "@/content/about.md";
+import Layout from "@/layouts/BasicPage.astro";
+// import type Props from "@/layouts/BasicPage.astro"
+
+const frontmatter = aboutFrontmatter as {
+  title: string;
+  description?: string;
+  image?: string;
+};
+
+---
+
+
+<Layout frontmatter={frontmatter}>
+  <AboutContent />
+</Layout>

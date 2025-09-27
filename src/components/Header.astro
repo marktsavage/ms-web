@@ -21,9 +21,25 @@ const isActive = (path: string) => {
 
   return currentPath === path || currentPathArray[0] === pathArray[0];
 };
+
+// Search functionality:
+// <li class="col-span-1 flex items-center justify-center">
+//   <LinkButton
+//     href="/search"
+//     class:list={[
+//       "focus-outline flex p-3 sm:p-1",
+//       { "[&>svg]:stroke-accent": isActive("/search") },
+//     ]}
+//     ariaLabel="search"
+//     title="Search"
+//   >
+//     <IconSearch />
+//     <span class="sr-only">Search</span>
+//   </LinkButton>
+// </li>
 ---
 
-<header>
+<header class="mb-8">
   <a
     id="skip-to-content"
     href="#main-content"
@@ -69,18 +85,18 @@ const isActive = (path: string) => {
           ]}
         >
           <li class="col-span-2">
-            <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-              Posts
+            <a href="/why-therapy" class:list={{ "active-nav": isActive("/why-therapy") }}>
+              Why Therapy
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-              Tags
+            <a href="/mindfulness-therapy" class:list={{ "active-nav": isActive("/mindfulness-therapy") }}>
+              Mindfulness Approach
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
-              About
+            <a href="/contact" class:list={{ "active-nav": isActive("/contact") }}>
+              Contact
             </a>
           </li>
           {
@@ -103,20 +119,7 @@ const isActive = (path: string) => {
               </li>
             )
           }
-          <li class="col-span-1 flex items-center justify-center">
-            <LinkButton
-              href="/search"
-              class:list={[
-                "focus-outline flex p-3 sm:p-1",
-                { "[&>svg]:stroke-accent": isActive("/search") },
-              ]}
-              ariaLabel="search"
-              title="Search"
-            >
-              <IconSearch />
-              <span class="sr-only">Search</span>
-            </LinkButton>
-          </li>
+          
           {
             SITE.lightAndDarkMode && (
               <li class="col-span-1 flex items-center justify-center">
