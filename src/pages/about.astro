@@ -1,5 +1,7 @@
 ---
-import AboutContent, { frontmatter as aboutFrontmatter } from "@/content/about.md";
+import AboutContent, {
+  frontmatter as aboutFrontmatter,
+} from "@/content/about.md";
 import Layout from "@/layouts/BasicPage.astro";
 
 const frontmatter = aboutFrontmatter as {
@@ -7,9 +9,7 @@ const frontmatter = aboutFrontmatter as {
   description?: string;
   image?: string;
 };
-
 ---
-
 
 <Layout frontmatter={frontmatter}>
   <AboutContent />

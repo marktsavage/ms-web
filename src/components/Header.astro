@@ -85,17 +85,26 @@ const isActive = (path: string) => {
           ]}
         >
           <li class="col-span-2">
-            <a href="/why-therapy" class:list={{ "active-nav": isActive("/why-therapy") }}>
+            <a
+              href="/why-therapy"
+              class:list={{ "active-nav": isActive("/why-therapy") }}
+            >
               Why Therapy
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/mindfulness-therapy" class:list={{ "active-nav": isActive("/mindfulness-therapy") }}>
+            <a
+              href="/mindfulness-therapy"
+              class:list={{ "active-nav": isActive("/mindfulness-therapy") }}
+            >
               Mindfulness Approach
             </a>
           </li>
           <li class="col-span-2">
-            <a href="/contact" class:list={{ "active-nav": isActive("/contact") }}>
+            <a
+              href="/contact"
+              class:list={{ "active-nav": isActive("/contact") }}
+            >
               Contact
             </a>
           </li>
@@ -119,7 +128,7 @@ const isActive = (path: string) => {
               </li>
             )
           }
-          
+
           {
             SITE.lightAndDarkMode && (
               <li class="col-span-1 flex items-center justify-center">

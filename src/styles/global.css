@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @import "./typography.css";
 @import "./theme.css";
@@ -9,7 +9,9 @@
 html[data-theme="light"] {
   --background: var(--color-light-bg);
   --foreground: var(--color-light-tx);
-  --accent: var(--color-blue-700);      /* OR var(--color-magenta-600), pick as desired */
+  --accent: var(
+    --color-blue-700
+  ); /* OR var(--color-magenta-600), pick as desired */
   --muted: var(--color-light-ui-2);
   --border: var(--color-light-ui-3);
 }
@@ -17,13 +19,16 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   --background: var(--color-dark-bg);
   --foreground: var(--color-dark-tx);
-  --accent: var(--color-yellow-500);   /* OR var(--color-yellow-400), pick as desired */
+  --accent: var(
+    --color-yellow-500
+  ); /* OR var(--color-yellow-400), pick as desired */
   --muted: var(--color-dark-ui-2);
   --border: var(--color-dark-ui-3);
 }
 
 @theme {
-  --font-sans: "-apple-system", system-ui, "Inter", "Helvetica", "Arial", "sans-serif";
+  --font-sans:
+    "-apple-system", system-ui, "Inter", "Helvetica", "Arial", "sans-serif";
 }
 
 @theme inline {
@@ -32,7 +37,6 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
-
 }
 
 @layer base {
@@ -47,7 +51,7 @@ html[data-theme="dark"] {
   body {
     @apply flex min-h-svh flex-col bg-background font-sans text-foreground selection:bg-accent/75 selection:text-background;
   }
-  
+
   a,
   button {
     @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
