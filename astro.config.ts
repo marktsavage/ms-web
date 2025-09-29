@@ -11,9 +11,12 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
 
+const siteBase = process.env.SITE_BASE || '/';
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  base: siteBase,
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),

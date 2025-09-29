@@ -1,5 +1,6 @@
 export const SITE = {
-  website: "https://marktsavage.co.uk/", // replace this with your deployed domain
+  // website: "https://marktsavage.co.uk/",
+  website: "https://marktsavage.github.io",
   author: "Mark Savage",
   profile: "https://",
   desc: "Mindfulness-based psychotherapy and counselling",
