@@ -6,7 +6,9 @@ import IconMoon from "@/assets/icons/IconMoon.svg";
 import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
+import Href from "@/components/Href.astro";
 import LinkButton from "./LinkButton.astro";
+
 import { SITE } from "@/config";
 
 const { pathname } = Astro.url;
@@ -55,12 +57,11 @@ const isActive = (path: string) => {
       id="top-nav-wrap"
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
-      <a
-        href="/"
+      <Href
         class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
       >
         {SITE.title}
-      </a>
+      </Href>
       <nav
         id="nav-menu"
         class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
@@ -85,28 +86,25 @@ const isActive = (path: string) => {
           ]}
         >
           <li class="col-span-2">
-            <a
-              href="/why-therapy"
-              class:list={{ "active-nav": isActive("/why-therapy") }}
-            >
+            <Href link="/why-therapy" class:list={{ "active-nav": isActive("/why-therapy") }}>
               Why Therapy
-            </a>
+            </Href>
           </li>
           <li class="col-span-2">
-            <a
-              href="/mindfulness-therapy"
+            <Href
+              link="/mindfulness-therapy"
               class:list={{ "active-nav": isActive("/mindfulness-therapy") }}
             >
               Mindfulness Approach
-            </a>
+            </Href>
           </li>
           <li class="col-span-2">
-            <a
-              href="/contact"
+            <Href
+              link="/contact"
               class:list={{ "active-nav": isActive("/contact") }}
             >
               Contact
-            </a>
+          </Href>
           </li>
           {
             SITE.showArchives && (

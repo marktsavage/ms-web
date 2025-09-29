@@ -1,10 +1,8 @@
 
-const siteBase = process.env.SITE_BASE || '/';
-
 export const SITE = {
   // website: "https://marktsavage.co.uk/",
   website: "https://marktsavage.github.io",
-  base: siteBase,
+  base: "/ms-web/",
   author: "Mark Savage",
   profile: "https://",
   desc: "Mindfulness-based psychotherapy and counselling",

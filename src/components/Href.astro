@@ -1,0 +1,23 @@
+---
+import { withBase } from "@/utils/url";
+
+const {
+  link = "",
+  external = false,
+  target = external ? "_blank" : "_self",
+  rel = external ? "noopener noreferrer" : undefined,
+  ...rest
+} = Astro.props;
+
+// Only prepend base for internal links (hrefs starting with '/')
+const computedHref = external ? link : withBase(link);
+---
+
+<a
+  href={computedHref}
+  target={target}
+  rel={rel}
+  {...rest}
+>
+  <slot />
+</a>

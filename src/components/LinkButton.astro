@@ -1,4 +1,6 @@
 ---
+import Href from "@/components/Href.astro";
+
 export interface Props {
   id?: string;
   href: string;
@@ -29,14 +31,14 @@ const {
       <slot />
     </span>
   ) : (
-    <a
+    <Href
       id={id}
-      {href}
+      link={href}
       class:list={["group inline-block hover:text-accent", className]}
       aria-label={ariaLabel}
       title={title}
     >
       <slot />
-    </a>
+    </Href>
   )
 }
