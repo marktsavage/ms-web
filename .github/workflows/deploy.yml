@@ -23,7 +23,7 @@ jobs:
       - name: Install, build, and upload your site output
         uses: withastro/action@v4
         env:
-          SITE_BASE: /ms-web/
+          SITE_BASE: /ms-web
 
         # with:
         # path: . # The root location of your Astro project inside the repository. (optional)
