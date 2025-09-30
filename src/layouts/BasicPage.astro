@@ -29,9 +29,9 @@ const { frontmatter } = Astro.props;
   <main id="main-content">
     <section id="content" class="app-prose mb-28 max-w-app prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
-      <div class={"flex flex-col md:flex-row gap-8 "}>
+      <div class={"flex flex-col md:flex-row gap-8"}>
         <div
-          class:list={["intro-p flex-1", !frontmatter.image && "max-w-[66%]"]}
+          class:list={["intro-p flex-1", !frontmatter.image && "max-w-2xl"]}
         >
           <slot />
         </div>
