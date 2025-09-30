@@ -5,6 +5,9 @@
  * @returns A URL with the correct base prefix
  */
 export function withBase(path: string): string {
-  // (docs: https://docs.astro.build/en/reference/configuration-reference/#base)
-  return `${import.meta.env.BASE_URL}${path}`;
+   if (!path) return import.meta.env.BASE_URL;
+  // Ensure BASE_URL ends with '/' and path does not start with '/'
+  const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+  const normalizedPath = path.replace(/^\/+/, '');
+  return `${base}/${normalizedPath}`;
 }
