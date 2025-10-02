@@ -2,7 +2,7 @@
 export const SITE = {
   // website: "https://marktsavage.co.uk/",
   website: "https://marktsavage.github.io",
-  base: "/ms-web/",
+  base: "/",
   author: "Mark Savage",
   profile: "https://",
   desc: "Mindfulness-based psychotherapy and counselling",
